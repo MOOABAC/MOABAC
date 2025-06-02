@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOAB Anti-Cheat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(-45deg, #0a0a0a, #0d1a2d, #1a2a40, #0a0a0a);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      background-color: #101820;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #1a2a40;
+    }
+
+    header h1 {
+      color: #1e90ff;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: #ccc;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #1e90ff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #1e90ff;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 40px;
+      color: #bbb;
+    }
+
+    .download-btn {
+      background-color: #1e90ff;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #157acc;
+      transform: scale(1.05);
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 80px 20px;
+      background-color: #0f1a2f;
+    }
+
+    .feature {
+      background-color: #121e36;
+      padding: 30px;
+      border-radius: 10px;
+      width: 300px;
+      border: 1px solid #1e2e4d;
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature h3 {
+      color: #1e90ff;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      color: #aaa;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0a0a0a;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MOAB AC</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Protect your server now with MOAB!</h2>
+    <p>Advanced protection powered by behavior analysis and AI-driven detection. Built for gamers, trusted by servers.</p>
+    <a href="https://www.anonfile.la/e6dd29" download>
+      <button class="download-btn">Download</button>
+    </a>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature">
+      <h3>Real-time Detection</h3>
+      <p>Detects cheats and suspicious behaviors instantly using smart pattern recognition.</p>
+    </div>
+    <div class="feature">
+      <h3>Lightweight & Fast</h3>
+      <p>Engineered for minimal performance impact while maintaining top-tier security.</p>
+    </div>
+    <div class="feature">
+      <h3>Server Integration</h3>
+      <p>Easy integration with FiveM, GTA V, and other game platforms via API and SDK.</p>
+    </div>
+    <div class="feature">
+      <h3>Dashboard & Logs</h3>
+      <p>Track cheat events, player behaviors, and system health with a modern admin panel.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2024 MOAB Anti-Cheat. All rights reserved. | <a href="#" style="color:#1e90ff">Privacy Policy</a>
+  </footer>
+</body>
+</html>
